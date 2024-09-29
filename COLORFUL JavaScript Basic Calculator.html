@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+    <meta content="text/html; UTF-8" http-equiv="content-type">
+    <meta charset="UTF-8">
+
+    <title>COLORFUL JavaScript Basic Calculator</title> 
+
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" 
+        integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <meta name="viewport" content="width=device-width initial-scale=1">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="colorful-javascript-basic-calculator.css">
+
+</head>
+
+<body>
+
+<header>
+    <div class="top-left-header"><h1>COLORFUL</h1></div>
+    <div class="top-right-header"><h2>JavaScript</h2></div>
+    <div class="bottom-left-header"><h2>Basic</h2></div>
+    <div class="bottom-right-header"><h1>Calculator</h1></div>
+</header>
+
+<main>
+    <div class="calculator">
+        <pre class="display" id="display">0</pre>
+        <div class="buttons">
+            <button onclick="clearDisplay(      )">C</button>
+            <button onclick="appendToDisplay('(')">(</button>
+            <button onclick="appendToDisplay(')')">)</button>
+            <button onclick="clearLastElement( )">CE</button> 
+      
+            <button onclick="appendToDisplay('7')">7</button>
+            <button onclick="appendToDisplay('8')">8</button>
+            <button onclick="appendToDisplay('9')">9</button>
+            <button onclick="appendToDisplay('/')">/</button>
+
+            <button onclick="appendToDisplay('4')">4</button>
+            <button onclick="appendToDisplay('5')">5</button>  
+            <button onclick="appendToDisplay('6')">6</button> 
+            <button onclick="appendToDisplay('*')">*</button>
+
+            <button onclick="appendToDisplay('1')">1</button>
+            <button onclick="appendToDisplay('2')">2</button>
+            <button onclick="appendToDisplay('3')">3</button>
+            <button onclick="appendToDisplay('-')">-</button>
+
+            <button onclick="appendToDisplay('0')">0</button>
+            <button onclick="appendToDisplay('.')">.</button>
+            <button onclick="calculateResult(   )">=</button>
+            <button onclick="appendToDisplay('+')">+</button>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <h4>JavaScript English-Hungarian translation and software development ~ 2024 prepared by :
+        <a href="https://viktormihalyjozsa.com/" target="_blank"> VMJ </a></h4>
+</footer>
+
+<script type="text/javascript" src="colorful-javascript-basic-calculator.js"></script>
+
+</body>
+</html>

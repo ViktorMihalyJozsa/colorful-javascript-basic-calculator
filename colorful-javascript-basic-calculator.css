@@ -1,0 +1,203 @@
+/*  ========================================================================  *\
+    H T M L  -  B O D Y
+\*  ========================================================================  */
+
+body {
+    width:            100%;
+    height:           100%;
+
+    margin:            0;
+    padding:           0;
+
+    background-color:  lightyellow;
+}
+
+
+/*  ========================================================================  *\
+    H E A D E R
+\*  ========================================================================  */
+
+header {
+    position:  relative;
+
+    width:     100%;
+    height:    25vh;
+}
+
+    .top-left-header, .top-right-header,
+    .bottom-left-header, .bottom-right-header {
+            
+        width:    calc(50% - 4.5vh);
+        height:   10vh;
+        margin:   0vh;
+        padding:  1vh 2vh 1vh 2vh;
+    }
+
+    .top-left-header {
+        position:       absolute;
+        top:            0;
+        left:           0;
+
+        border-bottom:  1vh dashed rgba(255, 0, 0, 1);
+        border-radius:  0vh 0vh 5vh 0vh;
+
+        color:          red;
+        text-align:     right;
+    }
+
+    .top-right-header {
+        position:       absolute;
+        top:            0;
+        right:          0;
+
+        border-left:    1vh dashed rgba(0, 128, 0, 1);
+        border-radius:  5vh;
+
+        color:          green;
+        text-align:     left;
+    }
+
+    .bottom-left-header {
+        position:       absolute;
+        bottom:         0;
+        left:           0;
+
+        border-right:   1vh dotted rgba(0, 0, 255, 1);
+        border-radius:  5vh;
+
+        color:          blue;
+        text-align:     right;
+    }
+
+    .bottom-right-header {
+        position:       absolute;
+        bottom:         0;
+        right:          0;
+
+        border-top:     1vh dotted rgba(255, 255, 0, 1);
+        border-radius:  5vh 0vh 0vh 0vh;
+
+        color:          yellow;
+        text-align:     left;
+    }
+
+
+/*  ========================================================================  *\
+    M A I N  a n d  C A L C U L A T O R
+\*  ========================================================================  */
+
+main {
+    display:          flex;
+    flex-direction:   column;
+    justify-content:  center;
+    align-items:      center;
+
+    width:            auto;
+    height:           70vh;
+}
+
+    .calculator {
+        width:             auto;
+        padding:           1vh;
+
+        border:            1px solid grey;
+        border-radius:     1vh;
+        background-color:  gray;
+    
+        box-shadow:        0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+        .display {
+            overflow:          auto;
+
+            height:            12vh;
+            margin-bottom:     1vh;
+            padding:           1vh;
+
+            background-color:  whitesmoke;
+
+            border:            0.2vh solid #ccc;
+            border-radius:     0.5vh; 
+
+            text-align:        right;
+        }
+
+        .buttons {
+            display:                grid;
+            grid-template-columns:  repeat(4, 3fr);
+            gap:                    0.7vh;
+        }
+
+
+/*  ========================================================================  *\
+    F O O T E R
+\*  ========================================================================  */
+
+footer {
+    width:       calc(100% - 6vw);
+    height:      auto;
+    padding:     1vh 3vw 1vh 3vw;
+
+    color:       blueviolet;
+    text-align:  center;
+}
+
+
+/*  ========================================================================  *\
+    C O M P O N E N T ' S
+\*  ========================================================================  */
+
+    h1 {
+        font-family:  "Spicy Rice", serif;
+        font-size:    clamp(72px, 10vh, 36px);  /*10vh;*/
+    }
+
+    h2 {
+        font-family:  "Spicy Rice", serif;
+        font-size:    clamp(36px, 5vh, 18px);  /*5vh;*/
+    }
+
+    h3, .display, button {
+        font-family:  "Spicy Rice", serif;
+        font-size:    4vh;
+    }
+
+    h4 {
+        font-family:  "Spicy Rice", serif;
+        font-size:    2vh;
+    }
+
+    a, a:hover {
+        cursor:           pointer;
+        text-decoration:  none;
+
+        font-family:      "Spicy Rice", serif;
+        font-size:        3vh;
+        color:            blue;
+    }
+
+    button {
+        cursor:            pointer;
+
+        width:             11vh;
+        height:            9.5vh;
+
+        border:            none;
+        border-radius:     5px;
+
+        background-color:  lightyellow;
+    }
+
+        button:hover {
+            background-color:  orange;
+        }
+
+
+/*  ========================================================================  *\
+    B A C K G R O U N D ' S - E D I T O R  M O D E
+\*  ========================================================================  */
+
+/*header {background-color: blueviolet;}
+    .top-left-header, .bottom-right-header {background-color: gray;}
+main   {background-color: yellowgreen;}
+footer {background-color: orangered;}*/
