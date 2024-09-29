@@ -153,8 +153,9 @@ footer {
     }
 
     h2 {
-        font-family:  "Spicy Rice", serif;
-        font-size:    5vh;  /*5vh;*/
+        font-family:     "Spicy Rice", serif;
+        font-size:       5vh;  /*5vh;*/
+        letter-spacing:  0.5vh;
     }
 
     h3, .display, button {
@@ -193,6 +194,11 @@ footer {
         }
 
 
+    h1, h2, a, a:hover {
+        text-shadow: -0.2vh -0.2vh black, 0.5vh 0.5vh 0.5vh gray;
+    }
+
+
 /*  ========================================================================  *\
     @ m e d i a ( m a x - w i d t h :  7 6 8 p x )
 \*  ========================================================================  */       
@@ -206,8 +212,11 @@ footer {
     
             h1 {font-size: 5vh;}
             h2 {font-size: 2.5vh;}
+            h1, h2, a, a:hover {
+                text-shadow: -0.1vh -0.1vh black, 0.25vh 0.25vh 0.25vh grey;
+            }
     
-            main {height: 80vh;}
+            main {height: 78vh;}
     
             footer {height: 5vh;}  /*  padding-top + font-size + padding-bottom = 5vh  */
         }
@@ -218,4 +227,4 @@ footer {
 /*header {background-color: blueviolet;}
     .top-left-header, .bottom-right-header {background-color: gray;}
 main   {background-color: yellowgreen;}
-footer {background-color: orangered;}*/
+footer {background-color: orangered;}
