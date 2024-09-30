@@ -28,7 +28,10 @@
 <header>
     <div class="top-left-header"><h1>COLORFUL</h1></div>
     <div class="top-right-header"><h2>JavaScript</h2></div>
-    <div class="bottom-left-header"><h2>Basic</h2></div>
+    <div class="bottom-left-header">
+        <h2>On-Line &</h2>
+        <h2>Basic</h2>
+    </div>
     <div class="bottom-right-header"><h1>Calculator</h1></div>
 </header>
 
@@ -36,10 +39,10 @@
     <div class="calculator">
         <pre class="display" id="display">0</pre>
         <div class="buttons">
-            <button onclick="clearDisplay(      )">C</button>
+            <button onclick="clearDisplay(      )" class="clear">C</button>
             <button onclick="appendToDisplay('(')">(</button>
             <button onclick="appendToDisplay(')')">)</button>
-            <button onclick="clearLastElement( )">CE</button> 
+            <button onclick="clearLastElement( )" class="clear-entry">CE</button> 
       
             <button onclick="appendToDisplay('7')">7</button>
             <button onclick="appendToDisplay('8')">8</button>
@@ -58,7 +61,7 @@
 
             <button onclick="appendToDisplay('0')">0</button>
             <button onclick="appendToDisplay('.')">.</button>
-            <button onclick="calculateResult(   )">=</button>
+            <button onclick="calculateResult(   )" class="equal">=</button>
             <button onclick="appendToDisplay('+')">+</button>
         </div>
     </div>

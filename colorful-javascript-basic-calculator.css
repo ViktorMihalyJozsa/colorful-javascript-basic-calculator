@@ -9,7 +9,7 @@ body {
     margin:            0;
     padding:           0;
 
-    background-color:  lightyellow;
+    background-color:  white;
 }
 
 
@@ -18,10 +18,12 @@ body {
 \*  ========================================================================  */
 
 header {
-    position:  relative;
+    position:          relative;
 
-    width:     100%;
-    height:    25vh;
+    width:             100%;
+    height:            25vh;
+
+    background-color:  rgba(137, 43, 226, 0.25);
 }
 
     .top-left-header, .top-right-header,
@@ -51,7 +53,7 @@ header {
         right:          0;
 
         border-left:    1vh dashed rgba(0, 128, 0, 1);
-        border-radius:  5vh;
+        border-radius:  5vh 0vh 0vh 5vh;
 
         color:          green;
         text-align:     left;
@@ -63,7 +65,7 @@ header {
         left:           0;
 
         border-right:   1vh dotted rgba(0, 0, 255, 1);
-        border-radius:  5vh;
+        border-radius:  0vh 5vh 5vh 0vh;
 
         color:          blue;
         text-align:     right;
@@ -97,12 +99,14 @@ main {
 }
 
     .calculator {
-        width:             auto;
-        padding:           1vh;
+        width:             46.5vh;
+        height:            66.5vh;
+        padding:           1.25vh;
 
-        border:            1px solid grey;
+        border:            0.1vh solid grey;
         border-radius:     1vh;
-        background-color:  gray;
+
+        background-color:  rgba(128, 128, 128, 0.625);
     
         box-shadow:        0 2px 5px rgba(0, 0, 0, 0.1);
     }
@@ -110,8 +114,9 @@ main {
         .display {
             overflow:          auto;
 
-            height:            12vh;
-            margin-bottom:     1vh;
+            width:             auto;
+            height:            15vh;
+            margin-bottom:     1.25vh;
             padding:           1vh;
 
             background-color:  whitesmoke;
@@ -125,7 +130,7 @@ main {
         .buttons {
             display:                grid;
             grid-template-columns:  repeat(4, 3fr);
-            gap:                    0.7vh;
+            gap:                    0.75vh;
         }
 
 
@@ -135,10 +140,10 @@ main {
 
 footer {
     width:       calc(100% - 6vw);
-    height:      auto;  /*  padding-top + font-size + padding-bottom = 5vh  */
+    height:      3vh;  /*  padding-top + font-size + padding-bottom = 5vh  */
     padding:     1vh 3vw 1vh 3vw;
 
-    color:       blueviolet;
+    color:       rgba(137, 43, 226, 0.75);
     text-align:  center;
 }
 
@@ -161,6 +166,7 @@ footer {
     h3, .display, button {
         font-family:  "Spicy Rice", serif;
         font-size:    4vh;
+        color:        white;
     }
 
     h4 {
@@ -168,7 +174,7 @@ footer {
         font-size:    2vh;
     }
 
-    a, a:hover {
+    a {
         cursor:           pointer;
         text-decoration:  none;
 
@@ -177,11 +183,16 @@ footer {
         color:            blue;
     }
 
+        a:hover {
+            transition:  all 0.5s ease-in-out;
+            color:       orange;
+        }
+
     button {
         cursor:            pointer;
 
         width:             11vh;
-        height:            9.5vh;
+        height:            9vh;
 
         border:            none;
         border-radius:     5px;
@@ -190,13 +201,17 @@ footer {
     }
 
         button:hover {
-            background-color:  orange;
+            background-color:  yellow;
         }
 
 
-    h1, h2, a, a:hover {
+    h1, h3, .display, button, a, a:hover {
         text-shadow: -0.2vh -0.2vh black, 0.5vh 0.5vh 0.5vh gray;
     }
+
+    .clear {background-color: red;}
+    .clear-entry {background-color: orangered;}
+    .equal {background-color: green;}
 
 
 /*  ========================================================================  *\
@@ -204,15 +219,13 @@ footer {
 \*  ========================================================================  */       
 
         @media(max-width: 768px) {
-            header {
-                height:    15vh;
-            }
+            header {height: 15vh;}
                 .top-left-header, .top-right-header,
                 .bottom-left-header, .bottom-right-header {height: 5vh;}
     
             h1 {font-size: 5vh;}
             h2 {font-size: 2.5vh;}
-            h1, h2, a, a:hover {
+            h1, a, a:hover {
                 text-shadow: -0.1vh -0.1vh black, 0.25vh 0.25vh 0.25vh grey;
             }
     
@@ -225,6 +238,5 @@ footer {
 \*  ========================================================================  */
 
 /*header {background-color: blueviolet;}
-    .top-left-header, .bottom-right-header {background-color: gray;}
 main   {background-color: yellowgreen;}
-footer {background-color: orangered;}
+footer {background-color: orangered;}*/
