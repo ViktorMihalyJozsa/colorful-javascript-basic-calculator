@@ -205,13 +205,23 @@ footer {
         }
 
 
-    h1, h3, .display, button, a, a:hover {
-        text-shadow: -0.2vh -0.2vh black, 0.5vh 0.5vh 0.5vh gray;
+    h1, h3, a, a:hover {
+        text-shadow: -0.2vh -0.2vh black, 0.5vh 0.5vh 0.5vh rgba(0, 0, 0, 0.625);
+    }
+
+    .calculator, .display, button {
+        box-shadow:   -0.1vh -0.1vh black, 0.5vh 0.5vh 0.5vh rgba(0, 0, 0, 0.625);
+        text-shadow:  -0.2vh -0.2vh black, 0.2vh 0.2vh black;
     }
 
     .clear {background-color: red;}
+
     .clear-entry {background-color: orangered;}
+
     .equal {background-color: green;}
+
+    .addition, .subtraction, .multiplication, .division, 
+    .decimal-point, .bracket {background-color: blue;}
 
 
 /*  ========================================================================  *\
