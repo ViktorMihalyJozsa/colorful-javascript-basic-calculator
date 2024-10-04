@@ -221,8 +221,15 @@ footer {
         @media(max-width: 768px) {
             header {height: 15vh;}
                 .top-left-header, .top-right-header,
-                .bottom-left-header, .bottom-right-header {height: 5vh;}
+                .bottom-left-header, .bottom-right-header {height: 4.5vh; padding:  1vh 2vh 1vh 2vh;}
+
+                .top-left-header     {width: calc(53% - 4.5vh); background-color: rgba(137, 43, 226, 0.25);}
+                .top-right-header    {width: calc(47% - 4.5vh);}
+        
+                .bottom-left-header  {width: calc(42.5% - 4.5vh);}
+                .bottom-right-header {width: calc(57.5% - 4.5vh); background-color: rgba(137, 43, 226, 0.25);}
     
+
             h1 {font-size: 5vh;}
             h2 {font-size: 2.5vh;}
             h1, a, a:hover {
